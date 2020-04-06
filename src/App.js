@@ -32,15 +32,15 @@ node2.setPosition(100, 100)
 let port2 = node2.addOutPort('Out')
 
 const ports = [
-  { text: "Play", color: "#27AE60", isIn: true },
-  { text: "Move On", color: "#27AE60", isIn: true },
-  { text: "Stop", color: "#27AE60", isIn: true },
-  { text: "Delay", color: "#9B51E0", isIn: true },
-  { text: "Offset", color: "#9B51E0", isIn: true },
-  { text: "Amplitude", color: "#9B51E0", isIn: true },
-  { text: "Pitch", color: "#9B51E0", isIn: true },
-  { text: "Space", color: "#2D9CDB", isIn: true },
-  { text: "Space", color: "#F2994A", isIn: true },
+  { text: "Play", color: "#27AE60", isIn: true, key:1 },
+  { text: "Move On", color: "#27AE60", isIn: true, key:2 },
+  { text: "Stop", color: "#27AE60", isIn: true, key:3 },
+  { text: "Delay", color: "#9B51E0", isIn: true, key:4 },
+  { text: "Offset", color: "#9B51E0", isIn: true, key:5 },
+  { text: "Amplitude", color: "#9B51E0", isIn: true, key:6 },
+  { text: "Pitch", color: "#9B51E0", isIn: true, key:7 },
+  { text: "Space", color: "#2D9CDB", isIn: true, key:8 },
+  { text: "Space", color: "#F2994A", isIn: true, key:9 },
 ]
 
 const node3 = new JSCustomNodeModel({ color: 'rgb(192,255,0)', ports });
