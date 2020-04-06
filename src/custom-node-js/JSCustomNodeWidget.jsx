@@ -3,9 +3,9 @@ import { PortWidget } from '@projectstorm/react-diagrams';
 
 const JSCustomNodeWidget = ({ engine, node }) => {
 	const renderPorts = _ => {
-		return node.portz.map(portzo => {
+		return node.portz.map((portzo) => {
 			return (
-				<div className="port-row">
+				<div className="port-row" key={portzo.key}>
 					<PortWidget engine={engine} port={node.getPort('in')}>
 						<div style={{background: portzo.color}} className="circle-port" />
 					</PortWidget>
